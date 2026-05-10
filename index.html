@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nelson Peralta</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #111;
+        color: #fff;
+        font-family: monospace;
+      }
+      main {
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .cursor {
+        display: inline-block;
+        width: 8px;
+        height: 1.2em;
+        background-color: #fff;
+        animation: blink 1s step-start infinite;
+      }
+
+      @keyframes blink {
+        0%,
+        50% {
+          opacity: 1;
+        }
+        50.01%,
+        100% {
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <span>&gt;</span>
+      <span class="cursor"></span>
+    </main>
+  </body>
+</html>
